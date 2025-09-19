@@ -3,43 +3,32 @@
 <head>
     <meta charset="utf-8">
     <title>EuroVoyages</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
-
-    <!-- Google Web Fonts -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600&family=Roboto&display=swap" rel="stylesheet">
-
-    <!-- Icon Font Stylesheet -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
-
-    <!-- Favicon -->
     <link rel="icon" href="img/logo_edited.png" type="image/png">
-
-    <!-- Libraries Stylesheet -->
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
-
-    <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
-
-    <!-- Additional CSS -->
     <style>
-        /* Accordion CSS */
-        .accordion { background-color: #fff; color: #000; cursor: pointer; padding: 15px; width: 100%; text-align: left; border: 1px solid #ddd; margin-bottom: 5px; transition: 0.3s; display: flex; justify-content: space-between; align-items: center; }
+        /* Accordion styles */
+        .accordion {
+            background-color: #fff; color: #000; cursor: pointer; padding: 15px; width: 100%;
+            text-align: left; border: 1px solid #ddd; margin-bottom: 5px;
+            display: flex; justify-content: space-between; align-items: center;
+        }
         .accordion:hover { background-color: #f1f1f1; }
-        .panel { padding: 0 15px; display: none; background-color: #f9f9f9; border-left: 1px solid #ddd; border-right: 1px solid #ddd; border-bottom: 1px solid #ddd; }
+        .panel { padding: 0 15px; display: none; background-color: #f9f9f9;
+            border-left: 1px solid #ddd; border-right: 1px solid #ddd; border-bottom: 1px solid #ddd; }
         .panel a { display: block; padding: 10px 0; color: #007700; text-decoration: none; }
         .panel a:hover { text-decoration: underline; }
 
-        /* Contact form CSS */
-        .contact-form { background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        /* Contact form */
+        .contact-form { background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); max-width: 600px; margin: auto; }
         .contact-form h2 { margin-top:0; color:#00008b; }
         .contact-form label { display:block; margin-bottom:10px; font-weight:500; }
         .contact-form input, .contact-form select, .contact-form textarea { width:100%; padding:10px; margin-top:5px; margin-bottom:15px; border-radius:4px; border:1px solid #ccc; }
@@ -48,120 +37,191 @@
     </style>
 </head>
 <body>
-
-<!-- Spinner Start -->
-<div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-    <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
-        <span class="sr-only">Loading...</span>
-    </div>
-</div>
-<!-- Spinner End -->
-
-<!-- Navbar & Hero Start -->
-<div class="container-fluid position-relative p-0">
-    <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
-        <a href="" class="navbar-brand p-0">
-            <h1 class="m-0">
-                <img src="img/pol2_edited.png" alt="Logo" width="150"> EUROVOYAGES
-            </h1>
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="fa fa-bars"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ms-auto py-0">
-                <a href="index.html" class="nav-item nav-link active">Home</a>
-                <a href="about.html" class="nav-item nav-link">About</a>
-                <a href="services.html" class="nav-item nav-link">Services</a>
-                <a href="contact.html" class="nav-item nav-link">Contact</a>
-            </div>
-            <a href="https://wa.link/uppzf6" class="btn btn-primary rounded-pill py-2 px-4 ms-lg-4">Book Now</a>
-        </div>
-    </nav>
-
-    <!-- Carousel Start -->
-    <div class="carousel-header">
-        <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active"></li>
-                <li data-bs-target="#carouselId" data-bs-slide-to="1"></li>
-                <li data-bs-target="#carouselId" data-bs-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner" role="listbox">
-                <div class="carousel-item active">
-                    <img src="img/PLANE1.jpg" class="img-fluid" alt="Image">
-                    <div class="carousel-caption">
-                        <div class="p-3" style="max-width: 900px;">
-                            <h4 class="text-white text-uppercase fw-bold mb-4" style="letter-spacing: 3px;">Explore The World</h4>
-                            <h1 class="display-2 text-capitalize text-white mb-4">Let's Explore The World Together!</h1>
-                            <p class="mb-5 fs-5">Join us on unforgettable journeys. From booking your flights to planning your dream vacation, we’re here to make travel easy and exciting.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="img/AXA2.jpg" class="img-fluid" alt="Image">
-                    <div class="carousel-caption">
-                        <div class="p-3" style="max-width: 900px;">
-                            <h4 class="text-white text-uppercase fw-bold mb-4" style="letter-spacing: 3px;">Secure Your Future with AXA</h4>
-                            <h1 class="display-2 text-capitalize text-white mb-4">Smart Insurance, Peace of Mind</h1>
-                            <p class="mb-5 fs-5">Smart Insurance, Peace of Mind Life is full of surprises—make sure you’re ready for them. From travel and health to car and home insurance, AXA provides flexible, reliable, and affordable coverage tailored just for you. Protect what matters most and enjoy life with confidence, knowing AXA has you covered.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="img/gallery-1.jpg" class="img-fluid" alt="Image">
-                    <div class="carousel-caption">
-                        <div class="p-3" style="max-width: 900px;">
-                            <h4 class="text-white text-uppercase fw-bold mb-4" style="letter-spacing: 3px;">Explore The World</h4>
-                            <h1 class="display-2 text-capitalize text-white mb-4">You Like To Go?</h1>
-                            <p class="mb-5 fs-5">Whether you dream of sandy beaches, vibrant cities, or cultural adventures, we’ll match you with the tour that’s right for you. Tailor-made, affordable, and stress-free.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon btn bg-primary" aria-hidden="false"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
-                <span class="carousel-control-next-icon btn bg-primary" aria-hidden="false"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
         </div>
     </div>
-    <!-- Carousel End -->
-</div>
+    <!-- Spinner End -->
 
-<!-- About, Services, Locations, Booking, Testimonials, Footer ... -->
-<!-- Due to length, I kept your structure intact; image paths updated and duplicate head/body removed. -->
+    <!-- Navbar & Hero Start -->
+    <div class="container-fluid position-relative p-0">
+        <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+            <a href="" class="navbar-brand p-0">
+                <h1 class="m-0">
+                    <img src="img/pol2_edited.png" alt="Logo" width="150"> EUROVOYAGES
+                </h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About</a>
+                    <a href="services.html" class="nav-item nav-link">Services</a>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                </div>
+                <a href="https://wa.link/uppzf6" class="btn btn-primary rounded-pill py-2 px-4 ms-lg-4">Book Now</a>
+            </div>
+        </nav>
 
-<!-- Accordion JS -->
-<script>
-    const accordions = document.querySelectorAll('.accordion');
-    accordions.forEach(acc => {
-        acc.addEventListener('click', () => {
-            const panel = acc.nextElementSibling;
-            const arrow = acc.querySelector('span');
-            if (panel.style.display === "block") {
-                panel.style.display = "none";
-                arrow.innerHTML = "&#9660;";
-            } else {
-                panel.style.display = "block";
-                arrow.innerHTML = "&#9650;";
-            }
-        });
-    });
-</script>
+        <!-- Carousel Start -->
+        <div class="carousel-header">
+            <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active"></li>
+                    <li data-bs-target="#carouselId" data-bs-slide-to="1"></li>
+                    <li data-bs-target="#carouselId" data-bs-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                        <img src="img/PLANE1.jpg" class="img-fluid" alt="Image">
+                        <div class="carousel-caption">
+                            <div class="p-3" style="max-width: 900px;">
+                                <h4 class="text-white text-uppercase fw-bold mb-4" style="letter-spacing: 3px;">Explore The World</h4>
+                                <h1 class="display-2 text-capitalize text-white mb-4">Let's Explore The World Together!</h1>
+                                <p class="mb-5 fs-5">Join us on unforgettable journeys. From booking your flights to planning your dream vacation, we’re here to make travel easy and exciting.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/AXA2.jpg" class="img-fluid" alt="Image">
+                        <div class="carousel-caption">
+                            <div class="p-3" style="max-width: 900px;">
+                                <h4 class="text-white text-uppercase fw-bold mb-4" style="letter-spacing: 3px;">Secure Your Future with AXA</h4>
+                                <h1 class="display-2 text-capitalize text-white mb-4">Smart Insurance, Peace of Mind</h1>
+                                <p class="mb-5 fs-5">Smart Insurance, Peace of Mind Life is full of surprises—make sure you’re ready for them. From travel and health to car and home insurance, AXA provides flexible, reliable, and affordable coverage tailored just for you. Protect what matters most and enjoy life with confidence, knowing AXA has you covered.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/gallery-1.jpg" class="img-fluid" alt="Image">
+                        <div class="carousel-caption">
+                            <div class="p-3" style="max-width: 900px;">
+                                <h4 class="text-white text-uppercase fw-bold mb-4" style="letter-spacing: 3px;">Explore The World</h4>
+                                <h1 class="display-2 text-capitalize text-white mb-4">You Like To Go?</h1>
+                                <p class="mb-5 fs-5">Whether you dream of sandy beaches, vibrant cities, or cultural adventures, we’ll match you with the tour that’s right for you. Tailor-made, affordable, and stress-free.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon btn bg-primary" aria-hidden="false"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+                    <span class="carousel-control-next-icon btn bg-primary" aria-hidden="false"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <!-- Carousel End -->
+    </div>
 
-<!-- JavaScript Libraries -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-<script src="lib/easing/easing.min.js"></script>
-<script src="lib/waypoints/waypoints.min.js"></script>
-<script src="lib/owlcarousel/owl.carousel.min.js"></script>
-<script src="lib/lightbox/js/lightbox.min.js"></script>
+    <!-- About Start -->
+    <div class="container-fluid about py-5">
+        <div class="container py-5">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-5">
+                    <div class="h-100" style="border: 50px solid transparent #13357B transparent #13357B;">
+                        <img src="img/PLANE3.png" class="img-fluid w-100 h-100" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-7" style="background: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url(img/about-img-1.png);">
+                    <h5 class="section-about-title pe-3">About Us</h5>
+                    <h1 class="mb-4">Welcome to <span class="text-primary">Euro Voyages</span></h1>
+                    <p class="mb-4">At Euro Voyages, we believe that every journey should be more than just travel — it should be an experience to remember. Based in Cameroon and Canada, we are dedicated to helping travelers explore the world with comfort, safety, and style. With over 20 years of experience in the industry, we have built a reputation for excellence and trust. Whether you are planning a business trip, a family vacation, or a solo adventure, our team is here to guide you every step of the way. From booking airline tickets and hotels to organizing tours and providing travel insurance, we offer complete solutions tailored to your needs and budget. As an IATA-accredited travel agency, we work closely with leading airlines, hotels, and tour operators to ensure you get the best value and a smooth travel experience. Our commitment is to provide personalized service, reliable support, and unforgettable journeys that turn your travel dreams into reality. ✨ Euro Voyages — Your destination, our passion.</p>
+                    <div class="row gy-2 gx-4 mb-4">
+                        <div class="col-sm-6"><p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Airline ticket sales</p></div>
+                        <div class="col-sm-6"><p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Travel consulting</p></div>
+                        <div class="col-sm-6"><p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Hotel reservations</p></div>
+                        <div class="col-sm-6"><p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Travel insurance</p></div>
+                        <div class="col-sm-6"><p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Automobile insurance</p></div>
+                        <div class="col-sm-6"><p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Health insurance</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
 
-<!-- Template Javascript -->
-<script src="js/main.js"></script>
+    <!-- Accordion Locations -->
+    <div class="container py-5">
+        <h2>Our Locations</h2>
+        <button class="accordion">Yaoundé</button>
+        <div class="panel">
+            <a href="#">Option 1</a>
+            <a href="#">Option 2</a>
+            <a href="#">Option 3</a>
+        </div>
+        <button class="accordion">Douala</button>
+        <div class="panel">
+            <a href="#">Option 1</a>
+            <a href="#">Option 2</a>
+            <a href="#">Option 3</a>
+        </div>
+        <button class="accordion">Canada</button>
+        <div class="panel">
+            <a href="#">Option 1</a>
+            <a href="#">Option 2</a>
+            <a href="#">Option 3</a>
+        </div>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="container py-5">
+        <div class="contact-form">
+            <h2>Get an Enquiry</h2>
+            <form action="#" method="POST">
+                <label>Full Name*
+                    <input type="text" name="fullname" placeholder="Full Name" required>
+                </label>
+                <label>Phone Number*
+                    <input type="tel" name="phone" placeholder="+237 6XX XXX XXX" required>
+                </label>
+                <label>Email Id*
+                    <input type="email" name="email" placeholder="Email Id" required>
+                </label>
+                <label>Country*
+                    <select name="country" required>
+                        <option value="">Select your country</option>
+                        <option value="Cameroon">Cameroon</option>
+                        <option value="Canada">Canada</option>
+                        <option value="France">France</option>
+                    </select>
+                </label>
+                <label>Message*
+                    <textarea name="message" placeholder="Write your message here" required></textarea>
+                </label>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="container-fluid bg-dark text-white py-4">
+        <div class="text-center">
+            &copy; 2025 EuroVoyages. All Rights Reserved.
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Spinner
+        var spinner = document.getElementById('spinner');
+        window.addEventListener('load', function () { spinner.classList.remove('show'); });
+
+        // Accordion
+        var acc = document.getElementsByClassName("accordion");
+        for (var i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                panel.style.display = panel.style.display === "block" ? "none" : "block";
+            });
+        }
+    </script>
 </body>
 </html>
