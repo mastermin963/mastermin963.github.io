@@ -31,22 +31,50 @@ img {
     margin-left: 10px;
 }
 
-/* Hero Section */
+/* Hero Section Fullscreen */
 .hero-section {
-    background-image: url('../img/PLANE1.jpg'); /* Fallback for background */
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url('../img/PLANE1.jpg'); /* Path to your hero image */
     background-size: cover;
     background-position: center;
-    color: #fff;
+    position: relative;
+    color: white;
 }
 
-.hero-section h1 {
-    font-size: 48px;
-    margin-bottom: 20px;
+.hero-section::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* dark overlay for better text visibility */
 }
 
-.hero-section p {
-    font-size: 20px;
+.hero-section .hero-content {
+    position: relative;
+    z-index: 1;
 }
+
+.hero-section .btn {
+    background-color: #00008b;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-size: 18px;
+    display: inline-block;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.hero-section .btn:hover {
+    background-color: #0000cd;
+}
+
 
 /* Insurance Section */
 .insurance-section {
@@ -1387,3 +1415,4 @@ footer p {
 }
 
 /*** copyright end ***/
+
