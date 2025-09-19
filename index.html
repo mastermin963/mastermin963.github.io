@@ -447,26 +447,47 @@
 </div>
 
 <!-- Contact Form -->
-<div class="container py-5">
-    <div class="contact-form">
-        <h2>Get an Enquiry</h2>
-        <form action="#" method="POST">
-            <label>Full Name* <input type="text" name="fullname" placeholder="Full Name" required></label>
-            <label>Phone Number* <input type="tel" name="phone" placeholder="+237 6XX XXX XXX" required></label>
-            <label>Email Id* <input type="email" name="email" placeholder="Email Id" required></label>
-            <label>Country* 
-                <select name="country" required>
-                    <option value="">Select your country</option>
-                    <option value="Cameroon">Cameroon</option>
-                    <option value="Canada">Canada</option>
-                    <option value="France">France</option>
-                </select>
-            </label>
-            <label>Message* <textarea name="message" placeholder="Write your message here" required></textarea></label>
-            <button type="submit">Send Message</button>  <a href="submitto:mousbi829@gmail.com:">
-   Send us an email
-        </form>
-    </div>
+<body>
+
+<div  class="container">
+  <!-- Contact Form Section -->
+ <div class="contact-form">
+  <h2>Get an Enquiry</h2>
+  <form action="https://formsubmit.co/mousbi829@gmail.com" method="POST">
+    <!-- hidden settings -->
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html">
+
+    <label>Full Name*
+      <input type="text" name="fullname" placeholder="Full Name" required>
+    </label>
+
+    <label>Phone Number*
+      <input type="tel" name="phone" placeholder="+237 6XX XXX XXX" required>
+    </label>
+
+    <label>Email Id*
+      <input type="email" name="email" placeholder="Email Id" required>
+    </label>
+
+    <label>Products or Services
+      <select name="service">
+        <option value="">Select a service</option>
+        <option value="airline">Airline Ticket</option>
+        <option value="hotel">Hotel Booking</option>
+        <option value="tour">Travel Consulting</option>
+        <option value="insurance">Travel Insurance</option>
+      </select>
+    </label>
+
+    <label>Message
+      <textarea name="message" rows="5" placeholder="Your Message"></textarea>
+    </label>
+
+    <button type="submit">Submit</button>
+  </form>
+</div>
+
 </div>
      <!-- Testimonial Start -->
 <div class="container-fluid testimonial py-5">
@@ -636,6 +657,7 @@
 
 </body>
 </html>
+
 
 
 
